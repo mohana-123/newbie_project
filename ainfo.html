@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+         <title>Academic Info</title>
+         <link rel="stylesheet" href="sty.css">
+</head>
+</html>
+<body> 
+<div class="navbar">
+            <nav>
+                <ul id='MenuItems'>
+                    <li><a href='home.html'>Home</a></li>
+                    <li><a href='dept.html'>Departments</a></li>
+                    <li><a href='contact.html'>Contact</a></li>
+                    <li><a href='place.html'>Placements</a></li>
+                    <li><a href='chap.html'>Chapters</a></li>
+                    <li><a href='sinfo.html'>Personal info</a></li>
+                    <li><a href='ainfo.html'>Academic info</a></li>
+                    <li><a href='about.html'>About</a></li>
+       <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;"><a href="log1.html">Login</button></a></li>
+                </ul>
+            </nav>
+        </div>
+<div class="header">
+  	<h2 style="margin-top:10px">ACADEMIC DETAILS</h2>
+  </div>
+    <form >
+	<div class="input-group">
+  	  <label>First Name:</label>
+  	  <input type="text" name="First Name">
+  	</div>
+	  <div class="input-group">
+  	  <label>Last Name:</label>
+  	  <input type="text" name="Last Name">
+  	</div>
+	  <div class="input-group">
+  	  <label>Mobile Number:</label>
+  	  <input type="number" name="Mobile Number">
+  	</div>
+  	<div class="input-group">
+  	  <label>Email</label>
+  	  <input type="email" name="email" >
+  	</div>
+	  <label for="branch" style="width:50px">Branch:</label>
+	  <select name="Gender" id="cars">
+		<option value="CSE">CSE</option>
+		<option value="ECE">ECE</option>
+<option value="EEE">EEE</option>
+<option value="CIVIL">EEE</option>
+<option value="IT">IT</option>
+<option value="AI&DS">AI&DS</option>
+	  </select><br><br>
+<div class="input-group">
+  	  <label>SEM1 MARKS:</label>
+  	  <input type="text" name="Sem1">
+  	</div>
+<div class="input-group">
+  	  <label>SEM2 MARKS:</label>
+  	  <input type="text" name="Sem2">
+  	</div>
+<div class="input-group">
+  	  <label>SEM3 MARKS:</label>
+  	  <input type="text" name="Sem3">
+  	</div>
+<div class="input-group">
+  	  <label>SEM4 MARKS:</label>
+  	  <input type="text" name="Sem4">
+  	</div>
+<div class="input-group">
+  	  <label>SEM5 MARKS:</label>
+  	  <input type="text" name="Sem5">
+  	</div>
+<div class="input-group">
+  	  <label>SEM6 MARKS:</label>
+  	  <input type="text" name="Sem6">
+  	</div>
+<div class="input-group">
+  	  <label>SEM7 MARKS:</label>
+  	  <input type="text" name="Sem7">
+  	</div>
+<div class="input-group">
+  	  <label>SEM8 MARKS:</label>
+  	  <input type="text" name="Sem8">
+  	</div>
+<center><input type="submit" placeholder="submit" value="submit" onclick="print1()"></center>
+ </form>
+            <script>
+              function print1() {
+                document.getElementById("n2").innerHTML="Firstname:" +document.getElementById("firstname").value;
+                document.getElementById("n3").innerHTML="Lastname:" +document.getElementById("lastname").value;
+                document.getElementById("n4").innerHTML="RollNo:" +document.getElementById("rollno").value;
+                document.getElementById("n5").innerHTML="Branch:" +document.getElementById("branch").value;
+                document.getElementById("n6").innerHTML="Sem1:" +document.getElementById("sem1").value;
+                document.getElementById("n7").innerHTML="Sem2:" +document.getElementById("sem2").value;
+                document.getElementById("n8").innerHTML="Sem3" +document.getElementById("sem3").value;
+                document.getElementById("n9").innerHTML="Sem4:" +document.getElementById("sem4").value;
+                document.getElementById("n10").innerHTML="Sem5:" +document.getElementById("sem5").value;
+                document.getElementById("n11").innerHTML="Sem6:" +document.getElementById("sem6").value;
+                document.getElementById("n12").innerHTML="Sem7:" +document.getElementById("sem7").value;
+                document.getElementById("n1").innerHTML="Sem8:" +document.getElementById("sem8").value;
+              }
+          </script>
+  </body>
+</html>

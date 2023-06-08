@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>seek coding</title>
+    <link rel="stylesheet" href="sty.css">
+</head>
+<body style="background-color:violet;">
+<div class="navbar">
+            <nav>
+                <ul id='MenuItems'>
+                    <li><a href='home.html'>Home</a></li>
+                    <li><a href='dept.html'>Departments</a></li>
+                    <li><a href='contact.html'>Contact Us</a></li>
+                    <li><a href='place.html'>Placements</a></li>
+                    <li><a href='chap.html'>Chapters</a></li>
+                    <li><a href='sinfo.html'>Personal info</a></li>
+                    <li><a href='ainfo.html'>Academic info</a></li>
+                    <li><a href='about.html'>About</a></li>
+       <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;"><a href="log1.html">Login</button></a></li>
+                </ul>
+            </nav>
+        </div>
+<div width="300px"; class="header" style="border:3px solid gray; background: color #FFC0CB;margin-top:20px">
+  	<h2>Login Form</h2>
+  </div>
+	 
+  <form style="height:340px;background-color:lavender;margin-top:50px"  id='login'>
+  
+  	<div class="input-group">
+  		<label>Username</label>
+  		<input type="text" name="username" >
+  	</div>
+  	<div class="input-group">
+  		<label>Password</label>
+  		<input type="password" name="password">
+  	</div><br>
+  <p style="margin-left:50px;"><input type="checkbox">I agree to the terms and services</p>
+<div class="input-group">
+  		<center><button type="submit" class="btn" name="login_user">Login</button></center>
+  	</div><br>
+  	<center><p>
+  		Not yet a member? <a href="reg.html">Sign Up</a>
+  	</p></center>
+<center><a href="#">Forgot Password</a></center>
+  </form>
+    <script>
+        var x=document.getElementById('login');
+		var y=document.getElementById('register');
+		var z=document.getElementById('btn');
+		function register()
+		{
+			x.style.left='-400px';
+			y.style.left='50px';
+			z.style.left='110px';
+		}
+		function login()
+		{
+			x.style.left='50px';
+			y.style.left='450px';
+			z.style.left='0px';
+		}
+	</script>
+	<script>
+        var modal = document.getElementById('login-form');
+        window.onclick = function(event) 
+        {
+            if (event.target == modal) 
+            {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

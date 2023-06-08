@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="./stup.css">
+    <title>Document</title>
+    <style>
+        .boxed
+       {
+    width: 570px;
+height:350px;
+    border:30px solid gray;
+    padding: 80px;
+    background-color:lavender;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 10px;
+    overflow-y: hidden;
+     margin-left:300px;
+       }
+      .navbar
+{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 30px;
+    padding-top: 50px;
+margin-top:-30px;
+}
+nav
+{
+    flex: 30;
+    text-align: left;
+    width: 35%; 
+}
+nav ul 
+{
+    display: inline-block;
+    list-style: none;
+}
+nav ul li
+{
+    display: inline-block;
+    margin-right: 20px;
+}
+nav ul li a
+{
+    text-decoration: none;
+    font-size: 20px;
+    color:black;
+    font-family: Lucida Handwriting;
+font-weight:bold;
+}
+nav ul li button
+{
+    font-size: 20px;
+    color:black;
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+font-weight:bold;
+    font-family: Lucida Handwriting;
+}
+nav ul li button:hover
+{
+    color: #90EE90;
+}
+nav ul li a:hover
+{
+    color: #90EE90;
+}
+    </style>
+    <script>
+        function fun()
+        {
+            document.getElementById('ho').innerHTML="FIRST NAME:"+document.getElementById('first name').value; 
+            document.getElementById('ho1').innerHTML="LAST NAME:"+document.getElementById('last name').value;
+            document.getElementById('ho2').innerHTML="FATHER NAME:"+document.getElementById('ft').value; 
+            document.getElementById('ho3').innerHTML="MOTHER NAME:"+document.getElementById('mt').value;
+            document.getElementById('ho4').innerHTML="EMAIL:"+document.getElementById('email').value;
+            document.getElementById('ho5').innerHTML="GENDER:"+document.getElementsByName('gender').value;
+            document.getElementById('ho6').innerHTML="DATE OF BIRTH:"+document.getElementById('dob').value;
+            document.getElementById('ho7').innerHTML="NATIONALITY:"+document.getElementsByName('drop').value;
+            document.getElementById('ho8').innerHTML="CONTACT NUMBER:"+document.getElementById('phn').value;
+            document.getElementById('ho9').innerHTML="ADDRESS:"+document.getElementById('ad').value; 
+        }
+    </script>
+</head>
+<body style="background-color:violet">
+<div class="navbar">
+            <nav>
+                <ul id='MenuItems'>
+                    <li><a href='home.html'>Home</a></li>
+                    <li><a href='dept.html'>Departments</a></li>
+                    <li><a href='contact.html'>Contact</a></li>
+                    <li><a href='place.html'>Placements</a></li>
+                    <li><a href='chap.html'>Chapters</a></li>
+                    <li><a href='sinfo.html'>Personal info</a></li>
+                    <li><a href='ainfo.html'>Academic info</a></li>
+                    <li><a href='about.html'>About</a></li>
+       <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;"><a href="log1.html">Login</button></a></li>
+                </ul>
+            </nav>
+</div>
+    <b><center><h1 class="h3" style="margin-top:-30px">STUDENT PERSONAL INFORMATION</h1></center></b>
+    <div class="boxed">
+        <div class="a">
+            <form >
+            <div class="b">
+            <label for="first name">FIRST NAME:</label>
+            <input type="text" name="first name" id="first name" class="first name">
+        </div><pre></pre>
+        <div class="b">
+            <label for="last name">LAST NAME:</label>
+            <input type="text" name="last name" id="last name" class="last name" >
+        </div><pre></pre>
+        <div class="b">
+            <label for="ft">FATHER NAME:</label>
+            <input type="text" name="ft" id="ft" class="ft" >
+        </div><pre></pre>
+        <div class="b">
+            <label for="mt">MOTHER NAME:</label>
+            <input type="text" name="mt" id="mt" class="mt" >
+        </div><pre></pre>
+        <div class="b">
+            <label for="email">EMAIL:</label>
+            <input type="email" name="email" id="email" class="email" >
+        </div><pre></pre>
+        <div class="b">
+            <label for="gender">GENDER:</label>
+            <input type="radio" name="gender" id="gender1" class="gender" value="MALE">MALE
+            <input type="radio" name="gender" id="gender" class="gender" value="FEMALE">FEMALE
+        </div><pre></pre>
+        <div class="b">
+            <label for="dob">DATE OF BIRTH:</label>
+            <input type="date" name="dob" id="dob" class="dob"><br>
+        </div><pre></pre>
+        <div class="b">
+            <label for="nationality">NATIONALITY:</label>
+            <select name="dropdown">
+                <option value="indian" name="drop">INDIAN</option>
+                <option value="other" name="drop">OTHER</option>
+            </select><br>
+        </div><pre></pre>
+        <div class="b">
+            <label for="fathers occupation">FATHER'S Occupation: </label>
+            <select name="dropdown">
+                <option value="private employee">private employee</option>
+                <option value="government employee">government employee</option>
+            </select><br>
+        </div><pre></pre>
+        <div class="b">
+            <label for="phn">CONTACT NUMBER:</label>
+            <input type="number" name="phn" id="phn" class="phn">
+        </div><pre></pre>
+        <div>
+            <label for="add" class="ad">ADDRESS:</label>
+            <textarea rows="2" cols="40" name="add" class="q" id="ad" placeholder="ENTER ADDRESS HERE"></textarea> 
+        </div><pre></pre>
+        <div >
+         <center><input type="button" value="SUBMIT" class="btn" onclick="fun()"></center>
+        </div><pre></pre>
+        
+        </form>
+        </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<head>
+<title>Registration form</title>
+<meta charset="UTF-8">
+    <title>seek coding</title>
+    <link rel="stylesheet" href="sty.css">
+</head>
+<body>
+<div class="navbar">
+            <nav>
+                <ul id='MenuItems'>
+                    <li><a href='home.html'>Home</a></li>
+                    <li><a href='dept.html'>Departments</a></li>
+                    <li><a href='contact.html'>Contact</a></li>
+                    <li><a href='place.html'>Placements</a></li>
+                    <li><a href='chap.html'>Chapters</a></li>
+                    <li><a href='sinfo.html'>Personal info</a></li>
+                    <li><a href='ainfo.html'>Academic info</a></li>
+                    <li><a href='about.html'>About</a></li>
+       <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;"><a href="log1.html">Login</button></a></li>
+                </ul>
+            </nav>
+        </div>
+  <div class="header">
+  	<h2 style="margin-top:10px">Register</h2>
+  </div>
+	
+  <form >
+	<div class="input-group">
+  	  <label>First Name</label>
+  	  <input type="text" name="First Name">
+  	</div>
+	  <div class="input-group">
+  	  <label>Last Name</label>
+  	  <input type="text" name="Last Name">
+  	</div>
+  	<div class="input-group">
+  	  <label>Username</label>
+  	  <input type="text" name="username">
+  	</div>
+	  <div class="input-group">
+  	  <label>Mobile Number</label>
+  	  <input type="number" name="Mobile Number">
+  	</div>
+	  <div class="input-group">
+  	  <label>Father Name</label>
+  	  <input type="text" name="Father Name">
+  	</div>
+	  <div class="input-group">
+  	  <label>Pin Code</label>
+  	  <input type="number" name="Pin Code">
+  	</div>
+  	<div class="input-group">
+  	  <label>Email</label>
+  	  <input type="email" name="email" >
+  	</div>
+
+	  <label for="Gender">Gender</label>
+
+	  <select name="Gender" id="cars">
+		<option value="Male">Male</option>
+		<option value="Female">Female</option>
+	  </select><br><br>
+	  <label for="birthday">DOB</label>
+	  <input type="date" id="DOB" name="birthday"><br><br>
+	  Address:<textarea rows="5" cols="50">  
+		type your address here...
+	
+		</textarea>  
+  	<div class="input-group">
+  	  <label>Password</label>
+  	  <input type="password" name="password_1">
+  	</div>
+  	<div class="input-group">
+  	  <label>Confirm password</label>
+  	  <input type="password" name="password_2">
+  	</div>
+  	<div class="input-group">
+  	  <button type="submit" class="btn" name="reg_user" >Register</button>
+  	</div>
+  	<p>
+  		Already a member? <a href="log1.html">Login</a>
+  	</p>
+  </form>
+</body>
+</html>
